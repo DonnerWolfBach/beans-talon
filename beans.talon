@@ -3,7 +3,7 @@ app: vscode
 # Hints from the Beans extension (https://github.com/david-tejada/beans):
 # letters on sidebar rows, numbers on Command Palette rows.
 click <user.beans_hint>: user.run_rpc_command("beans.pick", beans_hint)
-click <number_small>: user.run_rpc_command("beans.pick", number_small)
+click [command [palette]] <number_small>: user.run_rpc_command("beans.pick", number_small)
 beans toggle: user.run_rpc_command("beans.toggle")
 
 # Right-clicks a row, opening its context menu. Community's plain "righty"
